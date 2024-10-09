@@ -5400,6 +5400,10 @@ with pkgs;
 
   loccount = callPackage ../development/tools/misc/loccount { };
 
+  logseq = callPackage ../by-name/lo/logseq/package.nix {
+    electron = electron_27;
+  };
+
   long-shebang = callPackage ../misc/long-shebang { };
 
   lssecret = callPackage ../misc/lssecret {};
